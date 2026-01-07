@@ -40,4 +40,5 @@ jobs:
           app-name: 'ExampleHttpWithBindingTrigger'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
+          sku: 'flexconsumption'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0DEFEC1651E54A32B72DEB396E95F763 }}
